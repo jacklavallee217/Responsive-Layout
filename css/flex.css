@@ -1,0 +1,154 @@
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 562px) {
+
+		/* =================================
+	  	Nav
+			==================================== */
+
+		.nav {
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.nav li {
+			justify-content: space-around;
+			float: none;
+			width: 20%;
+		}
+
+		.name-link {
+			flex: 1 100%;
+		}
+
+		.main-nav .link {
+			flex: 1 auto;
+			margin: 0 auto 8px auto;
+		}
+
+}
+
+@media (min-width: 718px) {
+
+	/* =================================
+		Nav
+		==================================== */
+
+		.link {
+			display: flex;
+			width: 30%;
+			align-content: center;
+			margin: 0 auto;
+		}
+
+	/* =================================
+		Banner
+	==================================== */
+
+		#banner p {
+			width: 50%;
+			font-size: 1.2em;
+			text-align: inherit;
+			margin-left: 1em;
+		}
+
+		#banner img {
+			width: 40%;
+		}
+
+		#banner img, #banner p {
+			display: inline-block;
+		}
+
+		/* =================================
+		  Portfolio
+		==================================== */
+
+		#portRow {
+		  display: block;
+		}
+
+				/* =================================
+					portRow
+				==================================== */
+
+				#portRow ul {
+					margin: 0 auto;
+					display: flex;
+					align-content: center;
+					flex-wrap: wrap;
+        }
+
+				#portRow ul li {
+					width: 40%;
+        }
+}
+
+@media (min-width: 800px) {
+
+		#topLink {
+			display: none;
+		}
+
+		.footer-nav {
+			display: flex;
+		}
+}
+
+@media (min-width: 945px) {
+
+		#name {
+			width: 40%;
+			float: left;
+		}
+
+		.nav {
+			width: 40%;
+			float: right;
+		}
+
+		.nav li:nth-child(2), .nav li:nth-child(3), .nav li:nth-child(4) {
+			float: right;
+		}
+
+		#banner {
+			display: flex;
+		}
+
+		#banner img {
+			float: left;
+			height: 200px;
+			width: 400px;
+		}
+
+		#portRow ul li {
+			width: 30%;
+		}
+
+}
+
+@media (min-width: 1045px) {
+
+		#banner {
+			width: 85%;
+		}
+
+		#banner p {
+			font-size: 1.3em;
+		}
+}
+
+@media (min-width: 1234px) {
+
+		#banner {
+			width: 70%;
+		}
+
+		#banner p {
+			font-size: 1.5em;
+			margin: 1.5em auto 0 1em;
+		}
+
+}

@@ -1,0 +1,272 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+  background-color: #f5f5f5;
+	margin: 0 auto;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+	font-size: .95em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Navigation
+==================================== */
+
+.main-nav {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-nav li {
+	margin: 0px 0px 8px 0px;
+}
+
+.main-nav .link {
+	background-color: #ffffff;
+}
+
+.main-nav .active-link {
+	background-color: #3366cc;
+}
+
+.main-nav .active-link a {
+	color: #f2f2f2;
+}
+
+.main-nav .link:hover, .main-nav .link:hover a {
+	background-color: #142952;
+	color: #f2f2f2;
+}
+
+#name {
+	width: 100%;
+}
+
+#name a {
+	font-size: 1.5em;
+}
+
+#name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.link {
+	width: 100%;
+}
+
+.name-link {
+	width: 100%;
+}
+
+.nav {
+  width: 100%;
+  margin: 10px auto 0 auto;
+}
+
+li {
+  display: block;
+}
+
+.nav li {
+	justify-content: space-around;
+}
+
+/* =================================
+  Banner
+==================================== */
+
+#banner {
+  width: 90%;
+  display: block;
+	margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+#banner p {
+  vertical-align: top;
+	text-align: center;
+  width: 90%;
+	font-size: 1em;
+  font-weight: 300;
+  color: #666666;
+}
+
+#banner img {
+	width: 250px;
+	height: 150px;
+}
+
+#banner img, #banner p {
+	display: block;
+	margin: 2em auto 0 auto;
+}
+
+/* =================================
+  Portfolio
+==================================== */
+
+#portHeader h2 {
+  padding: 2em 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#portRow {
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+      /* =================================
+        portRow
+        ==================================== */
+
+        #portRow ul {
+          display: block;
+        }
+
+        #portRow ul li {
+          vertical-align: top;
+					width: 90%;
+					margin: 0 auto;
+        }
+
+				#portRow ul li h3 {
+					margin-top: 1em;
+				}
+
+				#portRow ul li p {
+					margin: 0 2em 2.5em 2em;
+				}
+
+        #portRow ul li h3, #portRow ul li p {
+          text-align: center;
+        }
+
+        #portRow ul li a img {
+					margin: 0 auto;
+        }
+
+/* =================================
+  Footer
+    ==================================== */
+
+    footer {
+      height: 200px;
+			width: 90%;
+			margin: 0 auto;
+    }
+
+    footer p {
+      width: 80%;
+    }
+
+    footer h3 {
+      font-size: 1.5em;
+      margin-top: 4em;
+    }
+
+		footer h4 {
+      font-size: 1.25em;
+			margin: .5em;
+			float: right;
+    }
+
+    footer h3, footer p {
+      margin: .75em auto;
+      text-align: center;
+    }
+
+		.footer-inner {
+			border-bottom: solid 2px rgba(9, 58, 88, .8);
+
+		}
+
+		#footer-title {
+			margin: .5em;
+			float: left;
+		}
+
+		.footer-nav {
+			display: none;
+			margin: .5em;
+			width: 30%;
+			float: right;
+			font-size: 1.1em;
+		}
+
+		.footer-outer h4 {
+			color: #093a58;
+		}
+
+		.footer-nav li  a{
+			text-align: center;
+			margin: 0 auto;
+		}
+
+/* =================================
+	Media Queries
+		==================================== */
+
+		@media (min-width: 769px) {
+			.main-header,
+			.row,
+		  .footer-inner{
+				width: 80%;
+				margin: 0 auto;
+				max-width: 1150px;
+			}
+			.tagline {
+				font-size: 1.4em;
+			}
+		}

@@ -34,6 +34,7 @@ p {
 	font-size: .95em;
 }
 
+h1,
 h2,
 h3,
 a {
@@ -154,48 +155,175 @@ li {
   Portfolio
 ==================================== */
 
-#portHeader h2 {
-  padding: 2em 0;
+.content-header {
+	padding-bottom: 1em;
   text-align: center;
   vertical-align: middle;
 }
 
-#portRow {
+#portfolioContent {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   margin-bottom: 2em;
+	border-bottom: 3px solid rgba(9, 58, 88, 0.4);
+	border-radius: 5px;
 }
 
       /* =================================
-        portRow
+        portfolioContent
         ==================================== */
 
-        #portRow ul {
+        #portfolioContent ul {
           display: block;
         }
 
-        #portRow ul li {
+        #portfolioContent ul li {
           vertical-align: top;
 					width: 90%;
 					margin: 0 auto;
         }
 
-				#portRow ul li h3 {
+				#portfolioContent ul li h3 {
 					margin-top: 1em;
 				}
 
-				#portRow ul li p {
+				#portfolioContent ul li p {
 					margin: 0 2em 2.5em 2em;
 				}
 
-        #portRow ul li h3, #portRow ul li p {
+        #portfolioContent ul li h3, #portfolioContent ul li p {
           text-align: center;
         }
 
-        #portRow ul li a img {
+        #portfolioContent ul li a img {
 					margin: 0 auto;
         }
+
+/* =================================
+	Skills
+		==================================== */
+
+		#skillsContent {
+			padding-bottom: 2em;
+		}
+
+		#description {
+			font-size: 1.25em;
+			width: 100%;
+			text-align: center;
+			font-style: italic;
+		}
+
+		#skillsContent h2 {
+			margin: 1.5em auto;
+			text-align: center;
+		}
+
+		#classesDiv {
+			border-bottom: 2px solid #093a58;
+			margin-bottom: 1.5em;
+		}
+
+		#classesDiv, #languagesDiv {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 auto 3em auto;
+			justify-content: space-between;
+			width: 90%;
+		}
+
+		.classes, .languages {
+			color: #ffffff;
+			font-size: 1.2em;
+			flex: 1;
+			flex-direction: row;
+			text-align: center;
+			margin: 1em 10px;
+			border-radius: 20px;
+			transition: .3s ease-in;
+		}
+
+		.classes {
+			height: 100px;
+			line-height: 100px;
+		}
+
+		.languages {
+			height: 75px;
+			line-height: 75px;
+		}
+
+		/* =================================
+			classes
+				==================================== */
+
+		.classes:nth-child(1) {
+			background-color: #ab411f;
+		}
+
+		.classes:nth-child(2) {
+			background-color: #ab861f;
+		}
+
+		.classes:nth-child(3) {
+			background-color: #194e6d;
+		}
+
+		.classes:nth-child(1):hover {
+			background-color: #c96140;
+		}
+
+		.classes:nth-child(2):hover {
+			background-color: #c9a540;
+		}
+
+		.classes:nth-child(3):hover {
+			background-color: #2e6280;
+		}
+
+		/* =================================
+			languages
+				==================================== */
+
+		.languages:nth-child(1) {
+			background-color: #157251;
+		}
+
+		.languages:nth-child(2) {
+			background-color: #ab721f;
+		}
+
+		.languages:nth-child(3) {
+			background-color: #1b466f;
+		}
+
+		.languages:nth-child(4) {
+			background-color: #ab4C1f;
+		}
+
+		.languages:nth-child(1):hover {
+			background-color: #2b8767;
+		}
+
+		.languages:nth-child(2):hover {
+			background-color: #c99240;
+		}
+
+		.languages:nth-child(3):hover {
+			background-color: #305a83;
+		}
+
+		.languages:nth-child(4):hover {
+			background-color: #c96c40;
+		}
+
+
+
+
+
+
+
 
 /* =================================
   Footer

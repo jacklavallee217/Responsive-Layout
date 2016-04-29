@@ -11,14 +11,17 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="main-header" id="index">
       <div class="main-nav">
-        <h2 id="name"><a href="">Jack Lavallee</a></h2>
-          <ul class="nav">
-            <li class="link active-link"><a href="">Home</a></li>
-            <li class="link"><a href="">Portfolio</a></li>
-            <li class="link"><a href="">Contact</a></li>
-          </ul>
+        <h2 id="name"><a href="index.html">Jack Lavallee</a></h2>
+          <nav>
+            <ul class="nav">
+              <li class="link active-link"><a href="index.html">Home</a></li>
+              <li class="link"><a href="#portfolio">Portfolio</a></li>
+              <li class="link"><a href="#skills">Skills</a></li>
+              <li class="link"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
       </div>
     </header>
 
@@ -32,11 +35,9 @@
 
    <div class="content-wrapper">
 
-    <div id="portHeader">
-      <h2>Portfolio</h2>
-    </div>
+    <h1 class="content-header" id="portfolio">Portfolio</h1>
 
-    <div id="portRow">
+    <div id="portfolioContent">
       <ul>
         <li>
           <a href="">
@@ -83,9 +84,31 @@
       </ul>
     </div>
 
+    <h1 class="content-header" id="skills">Skills</h1>
+
+    <div id="skillsContent">
+      <p id="description">I am currently enrolled in a Computer Science Degree covering a number of topics including Web Development.</p>
+      <h2>Classes I've taken...</h2>
+      <div id="classesDiv">
+        <p class="classes">Advanced Web Development</p>
+        <p class="classes">Computer Networking</p>
+        <p class="classes">Java Programming</p>
+      </div>
+
+      <p id="description">Over the course of the last couple of years I have picked up several different scripting languages.</p>
+      <h2>Languages I've Scripted...</h2>
+      <div id="languagesDiv">
+        <p class="languages">HTML</p>
+        <p class="languages">CSS</p>
+        <p class="languages">JavaScript</p>
+        <p class="languages">PHP</p>
+      </div>
+
     </div>
 
-    <footer>
+  </div>
+
+    <footer id="contact">
       <div class="footer-inner">
         <h3>Contact</h3>
         <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
@@ -94,11 +117,12 @@
       </div>
       <div class="footer-outer">
         <h4 id="footer-title">Jack Lavallee</h4>
-        <h4 id="topLink"><a href="">Back to the Top</a></h4>
+        <h4 id="topLink"><a href="#index">Back to the Top</a></h4>
         <ul class="footer-nav">
-          <li class="link active-link"><a href="">Home</a></li>
-          <li class="link"><a href="">Portfolio</a></li>
-          <li class="link"><a href="">Contact</a></li>
+          <li class="link active-link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="#portfolio">Portfolio</a></li>
+          <li class="link"><a href="#skills">Skills</a></li>
+          <li class="link"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </footer>

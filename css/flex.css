@@ -66,7 +66,7 @@
 		  Portfolio
 		==================================== */
 
-		#portRow {
+		#portfolioContent {
 		  display: block;
 		}
 
@@ -74,14 +74,14 @@
 					portRow
 				==================================== */
 
-				#portRow ul {
+				#portfolioContent ul {
 					margin: 0 auto;
 					display: flex;
 					align-content: center;
 					flex-wrap: wrap;
         }
 
-				#portRow ul li {
+				#portfolioContent ul li {
 					width: 40%;
         }
 }
@@ -123,7 +123,7 @@
 			width: 400px;
 		}
 
-		#portRow ul li {
+		#portfolioContent ul li {
 			width: 30%;
 		}
 

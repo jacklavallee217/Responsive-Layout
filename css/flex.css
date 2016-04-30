@@ -48,18 +48,13 @@
 	==================================== */
 
 		#banner p {
-			width: 50%;
-			font-size: 1.2em;
+			width: 100%;
 			text-align: inherit;
 			margin-left: 1em;
 		}
 
-		#banner img {
-			width: 40%;
-		}
-
 		#banner img, #banner p {
-			display: inline-block;
+			display: block;
 		}
 
 		/* =================================
@@ -97,6 +92,15 @@
 		}
 }
 
+@media (min-width: 834px) {
+
+		#banner img, #banner p {
+			flex: 1;
+			flex-direction: row;
+			display: block;
+		}
+}
+
 @media (min-width: 945px) {
 
 		#name {
@@ -118,9 +122,7 @@
 		}
 
 		#banner img {
-			float: left;
-			height: 200px;
-			width: 400px;
+			margin: 0 auto;
 		}
 
 		#portfolioContent ul li {
@@ -136,7 +138,7 @@
 		}
 
 		#banner p {
-			font-size: 1.3em;
+			/*font-size: 1.3em;*/
 		}
 }
 
@@ -147,8 +149,8 @@
 		}
 
 		#banner p {
-			font-size: 1.5em;
-			margin: 1.5em auto 0 1em;
+			/*font-size: 1.5em;*/
+			margin: 1em auto 0 1em;
 		}
 
 }

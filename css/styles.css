@@ -58,6 +58,10 @@ img {
   Navigation
 ==================================== */
 
+.main-header {
+	margin-bottom: 2em;
+}
+
 .main-nav {
   display: block;
   width: 90%;
@@ -128,6 +132,7 @@ li {
 #banner {
   width: 90%;
   display: block;
+	flex-wrap: wrap;
 	margin: 0 auto;
   padding-bottom: 2em;
 }
@@ -136,19 +141,21 @@ li {
   vertical-align: top;
 	text-align: center;
   width: 90%;
-	font-size: 1em;
+	font-size: 1.5em;
   font-weight: 300;
   color: #666666;
 }
 
 #banner img {
-	width: 250px;
-	height: 150px;
+	max-width: 367px;
+	max-height: 225px;
+	margin: 0 auto;
 }
 
 #banner img, #banner p {
+	flex: 1;
+	flex-direction: row;
 	display: block;
-	margin: 2em auto 0 auto;
 }
 
 /* =================================
@@ -208,7 +215,7 @@ li {
 			padding-bottom: 2em;
 		}
 
-		#description {
+		.description {
 			font-size: 1.25em;
 			width: 100%;
 			text-align: center;
@@ -368,7 +375,7 @@ li {
 		.footer-nav {
 			display: none;
 			margin: .5em;
-			width: 30%;
+			width: 40%;
 			float: right;
 			font-size: 1.1em;
 		}
@@ -380,21 +387,4 @@ li {
 		.footer-nav li  a{
 			text-align: center;
 			margin: 0 auto;
-		}
-
-/* =================================
-	Media Queries
-		==================================== */
-
-		@media (min-width: 769px) {
-			.main-header,
-			.row,
-		  .footer-inner{
-				width: 80%;
-				margin: 0 auto;
-				max-width: 1150px;
-			}
-			.tagline {
-				font-size: 1.4em;
-			}
 		}
